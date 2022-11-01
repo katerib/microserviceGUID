@@ -4,7 +4,7 @@
 
 The microservice relies on [ZeroMQ](https://zeromq.org/), an open-source universal messaging library. Messages are carried via sockets which are connected by a [request-reply pattern](https://zeromq.org/get-started/?language=python#).
 
-The microservice will generate a random GUID upon request from the server. The GUID is a 128-bit universally unique identifier, or UUID object of type 'class'. 
+The microservice (aka, the server) will generate a random GUID upon request from the client. The GUID is a 128-bit universally unique identifier, or UUID object of type 'class'. 
 
 The server creates a socket of type response `zmq.Context().socket(zqm.REP)`. Then, the server binds the socket to port 5555 and listens for messages. Once a random GUID is made, it will be sent back to the client as a Python object `socket.send_pyobj()`.
 
