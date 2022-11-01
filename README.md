@@ -34,5 +34,5 @@ message = socket.recv_pyobj()
 
 ### UML Sequence Diagram
 
-![UML Sequence Diagram](/GUIDmicroservice/UML-sequence-diagram.png)
+![UML Sequence Diagram](/UML-Sequence-Diagram.png)
 
